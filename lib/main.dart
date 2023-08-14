@@ -11,32 +11,42 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-
-          children: [
-            Container(color: Colors.amber, height: 50, width: 50,),
-            Container(color: Colors.blue, height: 50, width: 50,),
-            Container(color: Colors.deepPurple, height: 50, width: 50,),
-
-            Container(color: Colors.deepOrange, height: 50, width: 50,),
-            Container(color: Colors.pink, height: 50, width: 50,),
-            Container(color: Colors.teal, height: 50, width: 50,),
-
-            Container(color: Colors.pinkAccent, height: 50, width: 50,),
-            Container(color: Colors.blueAccent, height: 50, width: 50,),
-            Container(color: Colors.lightGreenAccent, height: 50, width: 50,),
-          ],
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
         ),
+        home: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
+              children: [
+                Container(color: Colors.amber, height: 100, width: 100,),
+                Container(color: Colors.blue, height: 100, width: 100,),
+                Container(color: Colors.deepPurple, height: 100, width: 100,),
+              ]
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
+            children: [
+            Container(color: Colors.deepPurple, height: 100, width: 100,),
+            Container(color: Colors.lightGreen, height: 100, width: 100,),
+            Container(color: Colors.pink, height: 100, width: 100,),
+        ]
+    ),
+            Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
+                children: [
+                  Container(color: Colors.deepOrange, height: 100, width: 100,),
+                  Container(color: Colors.indigo, height: 100, width: 100,),
+                  Container(color: Colors.purpleAccent, height: 100, width: 100,),
+                ]
+            ),
       ]
-      )
+        ),
     );
   }
 }
