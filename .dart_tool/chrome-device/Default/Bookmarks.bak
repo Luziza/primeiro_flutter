@@ -1,0 +1,203 @@
+{
+   "checksum": "bf162e749cb87a6f8ab059958f36dd95",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "0",
+            "date_last_used": "0",
+            "guid": "2379c192-415f-45cd-99cd-8c6d5f4ce9db",
+            "id": "19",
+            "name": "Onibus.info | Acompanhe seu ônibus em tempo real",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://onibus.info/"
+         }, {
+            "date_added": "13336511377525170",
+            "date_last_used": "0",
+            "guid": "f4698fe0-6e30-4c5d-8b66-d48c9be80b5f",
+            "id": "20",
+            "name": "Alura | Cursos online de Tecnologia",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.alura.com.br/"
+         }, {
+            "date_added": "13336511495826242",
+            "date_last_used": "13340742550418814",
+            "guid": "0067c72b-f213-4dfa-920c-f5f03c8413f0",
+            "id": "21",
+            "name": "WhatsApp",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://web.whatsapp.com/"
+         }, {
+            "date_added": "13336519462526585",
+            "date_last_used": "0",
+            "guid": "60c897be-b750-4d11-a68d-47f09ee10526",
+            "id": "22",
+            "name": "GitHub",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://github.com/"
+         }, {
+            "date_added": "13336526268915511",
+            "date_last_used": "13348435168808502",
+            "guid": "d610e434-701a-4402-8a81-c96a80ee8bff",
+            "id": "23",
+            "name": "Caixa de entrada (4.570) - ribeiroluiza.jlle@gmail.com - Gmail",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://mail.google.com/mail/u/0/?hl=pt-BR#inbox"
+         }, {
+            "date_added": "13337662451525814",
+            "date_last_used": "0",
+            "guid": "538a2776-cb12-4661-8226-6ae1d3a46ed6",
+            "id": "24",
+            "name": "viver que nem gente | Trello",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://trello.com/b/Pot9lrtf/viver-que-nem-gente"
+         }, {
+            "date_added": "13337044096764319",
+            "date_last_used": "13337397763522683",
+            "guid": "8912772f-de7e-407b-91b3-83aa20ce2881",
+            "id": "25",
+            "name": "Flutter - Documentos Google",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://docs.google.com/document/d/1waFo8HzZsvcCCvYR3SA27OAoPYpx1sVqtwwYgLoe_fo/edit"
+         }, {
+            "date_added": "13337038881384797",
+            "date_last_used": "0",
+            "guid": "caeaf3c6-f2c9-4491-9637-2b2b0b6c144f",
+            "id": "26",
+            "name": "Can You RUN It | Can I Run It | Can My PC Run It",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.systemrequirementslab.com/cyri"
+         }, {
+            "date_added": "13338847660617472",
+            "date_last_used": "0",
+            "guid": "c8517581-c6e4-4b66-81bc-6c255ebc090f",
+            "id": "27",
+            "name": "ef",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "edge://newtab/"
+         }, {
+            "date_added": "13340507483683177",
+            "date_last_used": "0",
+            "guid": "c9c037af-ad6b-4648-83ab-052cd517f351",
+            "id": "28",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "view-source:https://web.whatsapp.com",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "view-source:https://web.whatsapp.com/"
+         }, {
+            "date_added": "13346561414810695",
+            "date_last_used": "0",
+            "guid": "346bd6cb-042d-46c5-a2b2-79736e675a01",
+            "id": "10",
+            "name": "Booking.com",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://js.redirect.hp.com/jumpstation?bd=booking&c=222&locale=*&pf=*&tp=edge&TYPE=3"
+         }, {
+            "date_added": "13346561414810571",
+            "date_last_used": "0",
+            "guid": "d5e214b6-4d63-45ec-b254-9004a288c20e",
+            "id": "9",
+            "name": "Express VPN",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://js.redirect.hp.com/jumpstation?bd=expressvpn&c=*&locale=en_us&pf=*&s=*&tp=edge"
+         }, {
+            "date_added": "13346561414810431",
+            "date_last_used": "0",
+            "guid": "da5f7511-0e9b-466a-848c-4fd898201777",
+            "id": "8",
+            "name": "McAfee Security",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://www.mcafee.com/consumer/v/browserfav/hp.html"
+         }, {
+            "date_added": "13346561414809782",
+            "date_last_used": "0",
+            "guid": "2c186527-4a56-446d-b08d-8b0de5ff39ce",
+            "id": "7",
+            "name": "LastPass password manager",
+            "show_icon": false,
+            "source": "oem_preload",
+            "type": "url",
+            "url": "https://js.redirect.hp.com/jumpstation?bd=lastpass&c=222&locale=*&pf=*&tp=edge&TYPE=3"
+         } ],
+         "date_added": "13346561414570518",
+         "date_last_used": "0",
+         "date_modified": "13348462602496240",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Barra de favoritos",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "children": [  ],
+            "date_added": "13336359618100814",
+            "date_last_used": "0",
+            "date_modified": "13336359618100814",
+            "guid": "18ffe0c6-cf3f-4694-9740-5d3cfbf173ae",
+            "id": "17",
+            "name": "Other Bookmarks",
+            "source": "unknown",
+            "type": "folder"
+         }, {
+            "children": [  ],
+            "date_added": "13336359618101068",
+            "date_last_used": "0",
+            "date_modified": "13336359618101068",
+            "guid": "6e0fd25b-ec4a-4485-ac30-b54fcc096bc6",
+            "id": "18",
+            "name": "Synced Bookmarks",
+            "source": "unknown",
+            "type": "folder"
+         } ],
+         "date_added": "13346561414570521",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Outros favoritos",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13346561414570529",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Favoritos do celular",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CkEKHgiIgQISCJj1qL2MAQAAKg4QABgAIBEoBjAAOABAABIAIAEqGEx1NTh1Y1UwQVVqVURLdmI0bERUUlE9PaAGDBKrAQgbEqYBChw5d3pmNVdkVjRLTWNvdmlEN0RVUmpjV3JsZ3M9EiRjODUxNzU4MS1jNmU0LTRiNjYtODFiYy02YzI1NWViYzA5MGYYACABKAEw+Mak7csxOP3rwYSoMUCP1aPtyzFKHEZiTWNJelJKTUpqQzVPQytoV3A5QVBJN1RBTT1aIiIg////tFNkQlBuR0lFTjc5WVVOUjMzZ0tYcXhyVGtJND1lVNVgPhKqAQgaEqUBChx6b0xHOGRhb0JBR1BGWXN1V2VqR3ovR0xPK0U9EiRjYWVhZjNjNi1mMmM5LTQ0OTEtOTYzNy0yYjJiMGI2YzE0NGYYACACKAIw+8ak7csxOO3AgqahMUCe1aPtyzFKHE1PQjBmaWR4K3RsZFVGV09YN0g0dFJuR3BZaz1aISIf////aTZGTk1nK3NGc2tGb29MdmdnRnhOM2JZYjNjPWWSgCt5EqoBCBkSpQEKHCtRcHVweE81bVZvdjlmRnRmeXFMdEZMOS9KZz0SJDg5MTI3NzJmLWRlN2UtNDA3Yi05MWIzLTgzYWEyMGNlMjg4MRgAIAIoAjD5xqTtyzE46+rAqKExQJ3Vo+3LMUoceFBOWC9ydE5CTFFOSVIvWVlTZVMxNXpYaEVJPVohIh////9jK0ZidE14bXk1MGhpakxhL1dPYWNBR1VGQzA9ZTnGtrASqgEIFxKlAQocc0cydHdlanBQQkNNYmdDS2N2NWQ3Q2xpb3FzPRIkZDYxMGU0MzQtNzAxYS00NDAyLThhODEtYzk2YTgwZWU4YmZmGAAgAigCMPfGpO3LMTi+o7GInzFAm9Wj7csxShxyVG5NQjV1OWVVakJFRlJBR2tYaWd4V1VWSUE9WiEiH////kZJSU1NREwzbnByQWhLN0pzYmhqSFBCOExpZz1lmz2FthKqAQgVEqUBChx2clJ4NW9NUkdtNE9XNHpIM2tlK3pkSVNzUkU9EiQwMDY3YzcyYi1mMjEzLTRkZmEtOTIwYy1mNWYwM2M4NDEzZjAYACACKAIw/Mak7csxOMLbq4GfMUCa1aPtyzFKHERHMjRaYk5tMFJENFJjalBZM1Vkbk11Qk90dz1aISIf///3WkNFSXNkN2JpdXRTZHF4N0VybVhJUUFmM1drPWXiVKTjEqoBCBQSpQEKHE9KWm00VWl3a2JLMjExc3J6RkFqSk5rQUFOcz0SJGY0Njk4ZmUwLTZlMzAtNGM1ZC04YjY2LWQ0OGM5YmU4MGI1ZhgAIAIoAjD2xqTtyzE4mLekgZ8xQJnVo+3LMUocMmVpeDZWSEMwekVDbUhlUlliY3Avc1UvK1Q4PVohIh///+5VWGtvNlNEM3pDSDZxb1NaK3o1L1ZHZXhPelE9ZervNMASqgEIFhKlAQocZGZIczVTOUt6cXRXbllMYkcvbzRSRzYrc0FZPRIkNjBjODk3YmUtYjc1MC00ZDExLWE2OGQtNDdmMDllZTEwNTI2GAAgAigCMPXGpO3LMTiF65GFnzFAm9Wj7csxShxtV0g2VXc0RWpUMEo0a0p6aGREMFY5RmRERGs9WiEiH////UZveEg3cUZoL3FNMmo0a01WNWVmdldtc1REZz1lwKUouhKoAQgTEqMBChxway9HRlJBdS9weGkxQ1JHVFFlK0tVNWFJLzg9EiQyMzc5YzE5Mi00MTVmLTQ1Y2QtOTljZC04YzZkNWY0Y2U5ZGIYACACKAIw+sak7csxOPm7iN2eMUCZ1aPtyzFKHGgwcXBHWnF4ekUzMkZMU0xpeTkyVm5HTk9Vaz1aHyId+kZJeVJXTDUxZXNDSExBeld2blpTeTFOdlpkaz1lPT6W+RKJAQgBEoQBChx5eEovNmZ2a2VjcjdrcDVFUXpCNHRXTHBkYkU9EiQ4OWEzMWYyZi1jODI2LTU1ZDAtYjQyYi1kMGI5M2Q5MDRiNGIYACAAKAAw7u/AyL0uOMzm9peCMEDM5vaXgjBKHGFSQ1dMZ2hGOWI1SW5xS0lEdnVKL2p2UWtGYz1aAGUAAAAAEokBCAMShAEKHG5qZ0R1ODhlQ3J2WHA4NnBEN2ZIR2NxRnA4OD0SJDY1M2M1MDY5LWU5ZjUtNWYwOC04NjYzLWU1NjgxN2JiZjFkMRgAIAAoADDz78DIvS442Of2l4IwQNjn9peCMEoceXpOQjAxY241NEE3Y1JVMHVUKy9QZ21UdFVvPVoAZQAAAAASiQEIAhKEAQocWWNTVG9udkVTUHdxQ3M0TDJjclZodjY4TDk4PRIkN2YxZmM3YzYtZDA0MS01MTc0LTgwMzctMjJlMDU2Njk2MzFmGAAgACgAMO/vwMi9Ljjr5vaXgjBA6+b2l4IwShxvUFZraHdCUmJWNjVLQ1dSMitJT05IV29PdTg9WgBlAAAAABKnAQgSEqIBChxOOTVhUzlnemxjU2N3Z0hmUFBTRUV3cjZJd3M9EiQ2ZTBmZDI1Yi1lYzRhLTQ0ODUtYWMzMC1iNTRmY2MwOTZiYzYYACAAKAAww8CI3Z4xOPjCiN2eMUD4wojdnjFKHFpVcWVUcnBkb3FnL25UVitCNWxVZHg4Vnd5MD1aHiIcTURHdXd4bHV4Y0VOZmxGYWhYTXl3THhjTEZFPWUAAAAAEqoBCBgSpQEKHC9tdE5aYWgwWDE2Q2pDeCtRcTRlQ2RQZ045VT0SJDUzOGEyNzc2LWNiMTItNDY2MS04MjI2LTZhZTFkM2E0NmVkNhgAIAIoAjD0xqTtyzE495yuz6MxQJzVo+3LMUocYTVoUXZkYkZQLzJDU3J6L0JXRlZEMlN6OXFZPVohIh////8yWVlZWGpDWDl2UHFmdC9HZHphQnFDaVR3cVE9ZehX78kSqwEIHBKmAQocR2Y2UWoxajBNUHJ2YlBlU0Y2TEpqRDJoOFZvPRIkYzljMDM3YWYtYWQ2Yi00NjQ4LTgzYWItMDUyY2Q1MTdmMzUxGAAgACgAMOvcgZyuMTij34GcrjFAo9+BnK4xShxDanBRU3lDVlMrZ0VSNWx0c0VUT2c0TGNDZWs9WiIiIP///9p5SGE1M08zS0dwenN0dW91QnZycGZEVVhYMlk9ZQAAAAASpwEIERKiAQocUDVUVXlCNGtpaXZrWk5KbVRtWmlScFNlLzVrPRIkMThmZmUwYzYtY2YzZi00Njk0LTk3NDAtNWQzY2ZiZjE3M2FlGAAgACgAMJ65iN2eMTj5vYjdnjFA+b2I3Z4xShxsN0ZLUmpsRnhxMXN5UWZlR0dVT0c3ZUI5d0k9Wh4iHDJ5SnNPWlRuZEZNK0FVMENOY0piODZQTnhYZz1lAAAAADAAOAA=",
+   "version": 1
+}
