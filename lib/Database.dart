@@ -9,5 +9,5 @@ Future<Database> getDataBase()
   final String path = join(
       await getDatabasesPath(), 'task.db');
       ///O getDatabasesPath procura no dispositivo o caminho perfeito pra salvar arquivos
-  return openDatabase(path)
+  return openDatabase(path);
 }
