@@ -11,3 +11,5 @@ Future<Database> getDataBase()
       ///O getDatabasesPath procura no dispositivo o caminho perfeito pra salvar arquivos
   return openDatabase(path);
 }
+
+///teste
