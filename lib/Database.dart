@@ -7,9 +7,22 @@ Future<Database> getDataBase()
   async{
   ///Path é o local no aparelho onde o banco de dados vai ser salvo
   final String path = join(
-      await getDatabasesPath(), 'task.db');
+      await getDatabasesPath(), 'task.db'
+  );
       ///O getDatabasesPath procura no dispositivo o caminho perfeito pra salvar arquivos
-  return openDatabase(path);
+      ///task.db é o nome do banco
+  return openDatabase(path, onCreate: (db, version){
+                            ///se o caminho não existir ele irá criar
+    db.execute(tabelasql);}, version: 1);;
 }
 
-///teste
+const String tabelasql = 'CREATE TABLE $_tablename('
+    '$_nome TEXT,'
+    '$_dificuldade INTEGER,'
+    '$_imagem TEXT)';
+
+const String _tablename = 'taskTable';
+
+const String _nome = 'nome';
+const String _dificuldade = 'dificuldade';
+const String _imagem = 'imagem';
