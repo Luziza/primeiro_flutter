@@ -1,3 +1,4 @@
+import 'package:primeiro/task_dao.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 
@@ -13,16 +14,5 @@ Future<Database> getDataBase()
       ///task.db é o nome do banco
   return openDatabase(path, onCreate: (db, version){
                             ///se o caminho não existir ele irá criar
-    db.execute(tabelasql);}, version: 1);;
+    db.execute(TaksDao.tabelasql);}, version: 1);
 }
-
-const String tabelasql = 'CREATE TABLE $_tablename('
-    '$_nome TEXT,'
-    '$_dificuldade INTEGER,'
-    '$_imagem TEXT)';
-
-const String _tablename = 'taskTable';
-
-const String _nome = 'nome';
-const String _dificuldade = 'dificuldade';
-const String _imagem = 'imagem';
