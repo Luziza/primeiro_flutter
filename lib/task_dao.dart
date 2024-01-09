@@ -1,6 +1,7 @@
 
 import 'package:primeiro/Database.dart';
 import 'package:primeiro/Tarefa.dart';
+import 'package:sqflite/sqflite.dart';
 
 class TaksDao{
 
@@ -36,12 +37,20 @@ static const String _imagem = 'imagem';
       final Task tarefa = Task(linha[_nome], linha[_imagem], linha[_dificuldade]);
       tarefas.add(tarefa);
     }
-    print('Lista de tarefas $tarefas')
+    print('Lista de tarefas $tarefas');
     return tarefas;
   }
 
   ///Métodos que procura a tarefa a partir do nome
-  Future<List<Task>> Find(String nomeTarefa) async {}
+  Future<List<Task>> Find(String nomeTarefa) async {
+    final Database banco = await getDataBase(); ///Abrindo o banco novamente
+    final List<Map<String, dynamic>> resultado = banco.query(
+        _tablename where: '$_nome = ?', ///a ? é usada para comparar a informação do banco e a que queremos que seja comparada
+      whereArgs: [nomeTarefa,]; ///É o que estamos buscando
+    );
+    print('Tarefa encontrada ${toList(result)}');
+    return toList(result); ///Como esta em mapa usa a toList que criamos
+  }
 
   ///Método que deleta a tarefa
   delete(String nomeTarefa) async {}
