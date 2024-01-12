@@ -3,7 +3,6 @@ import 'package:primeiro/Tarefa.dart';
 import 'package:sqflite/sqflite.dart';
 
 class TaksDao {
-
   static const String tabelasql = 'CREATE TABLE $_tablename('
       '$_nome TEXT,'
       '$_dificuldade INTEGER,'
