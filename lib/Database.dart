@@ -14,5 +14,5 @@ Future<Database> getDataBase()
       ///task.db é o nome do banco
   return openDatabase(path, onCreate: (db, version){
                             ///se o caminho não existir ele irá criar
-    db.execute(TaksDao.tabelasql);}, version: 1);
+    db.execute(TaskDao.tabelasql);}, version: 1);
 }

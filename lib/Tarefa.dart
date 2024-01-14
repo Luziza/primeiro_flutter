@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:primeiro/Formulario.dart';
 import 'package:primeiro/task_dao.dart';
 
+
 class Tarefa extends StatefulWidget {
-  const Tarefa({super.key});
+  const Tarefa({Key? key}): super (key: key);
 
   @override
   State<Tarefa> createState() => _TarefaState();
@@ -22,17 +23,64 @@ class _TarefaState extends State<Tarefa> {
       ),
       body: Padding(
           padding: EdgeInsets.only(top: 8, bottom: 100),
-          child: FutureBuilder<List<Task>>(
-              future: TaskDao().findAll, builder: (context, snapshot){
+          child: FutureBuilder<List<Task>?>(
+              future: TaskDao().findAll(), builder: (context, snapshot){
             ///esse tipo de ListView.builder só constroe as tarefas que aparecem na
             ///tela e quando vocês escrola pra baixo ele vai construindo as outras
-                List<Task>? itens = snapshot.data;
-                return ListView.builder(itemCount: itens.length, ///mostra o tamanho da lista
-                    itemBuilder: (BuildContext context, int index){
-                  final Task tarefa = itens[index];
-                  return tarefa;
+                List<Task>? itens = snapshot.data; ///snapshot é responsavel pelos dados
+    ///
+                switch (snapshot.connectionState) {
+                  case ConnectionState.none:
+                    return Center(
+                      child: Column(
+                        children: const [
+                          CircularProgressIndicator(),
+                          Text('Carregando'),
+                        ],
+                      ),
+                    );
+                  case ConnectionState.waiting:
+                    return Center(
+                      child: Column(
+                        children: const [
+                          CircularProgressIndicator(),
+                          Text('Carregando'),
+                        ],
+                      ),
+                    );
+                    break;
+                  case ConnectionState.active:
+                    return Center(
+                      child: Column(
+                        children: const [
+                          CircularProgressIndicator(),
+                          Text('Carregando'),
+                        ],
+                      ),
+                    );
+                    break;
+                  case ConnectionState.done:
+                    if(snapshot.hasData && itens != null){ ///verifica se o snapshot tem dados e se ele não é null
+                      if(itens.isNotEmpty) {
+                        return ListView.builder(
+                            itemCount: itens.length,
+                            itemBuilder: (BuildContext context, int index) {
+                              final Task tarefa = itens[index];
+                              return tarefa;
+                            });
+                      }
+                      ///return para caso o itens esteja vazio e não tenha nenhuma tarefa adicionada
+                      return Center(
+                        child: Column(
+                          children: [
+                            Icon(Icons.error_outline),
+                          Text("NENHUMA TAREFA")
+                          ],
+                        ),
+                      );
                     }
-                );
+                    return Text('erro ao carregar tarefas');
+                }
           })),
 
       ///Future pega as informações no banco de dados e o builder constroe elas na tela
@@ -54,7 +102,11 @@ class _TarefaState extends State<Tarefa> {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (contextNew) => Formulario(taskContext: context)));
+                    builder: (contextNew) => Formulario(taskContext: context)
+                )
+            ).then((value) => setState(() => {
+              print("Regarregando...")
+            })); ///com o push vamos pra tela de formulario e quando voltarmos o then ele recarrega a página e a tarefa aparece sem precisar da hot reload
           },
           backgroundColor: Colors.white70,
           child: Icon(
@@ -180,15 +232,27 @@ class _TaskState extends State<Task> {
                         ),
                       ],
                     ),
-                    ElevatedButton(
-                        onPressed: () {
+
+                    Column(
+
+                      children: [
+                        ElevatedButton(onPressed: () {
                           setState(() {
-                            widget
-                                .nivel++; //usa o nivel com o widget. por que ele esta na classe task e nao na _taskstate
+                            TaskDao().delete(widget.nome);
                           });
-                          print(widget.nivel);
-                        },
-                        child: Icon(Icons.arrow_drop_up))
+                        } , child: Text('Excluir')),
+                        ElevatedButton(
+                            onPressed: () {
+                              setState(() {
+                                widget.nivel++; //usa o nivel com o widget. por que ele esta na classe task e nao na _taskstate
+                              });
+                              print(widget.nivel);
+                            },
+                            child: Icon(Icons.arrow_drop_up)),
+                      ],
+                    ),
+
+
                   ],
                 ),
               ),

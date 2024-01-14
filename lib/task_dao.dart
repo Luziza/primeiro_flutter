@@ -2,7 +2,7 @@ import 'package:primeiro/Database.dart';
 import 'package:primeiro/Tarefa.dart';
 import 'package:sqflite/sqflite.dart';
 
-class TaksDao {
+class TaskDao {
   static const String tabelasql = 'CREATE TABLE $_tablename('
       '$_nome TEXT,'
       '$_dificuldade INTEGER,'

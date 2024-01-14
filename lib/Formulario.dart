@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:primeiro/Tarefa.dart';
 import 'package:primeiro/data.dart';
+import 'package:primeiro/task_dao.dart';
 
 
 class Formulario extends StatefulWidget {
@@ -128,16 +130,13 @@ class _FormularioState extends State<Formulario> {
 
                     ///Botão de adicionar
                     ElevatedButton(onPressed:
-                        (){
+                        () async {
                       if(_formKey.currentState!.validate()) {
                         // print(imagemController.text);
                         // print(int.parse(dificuldadeController.text));
                         // print(nomeController.text);
+                        await TaskDao().save(Task(nomeController.text,imagemController.text, int.parse(dificuldadeController.text)));
                         ///Função de criar nova tarefa
-                        TaskInherite.of(widget.taskContext).newTask(
-                            nomeController.text,
-                            imagemController.text,
-                            int.parse(dificuldadeController.text));
                         ///SnackBar mostra uma mensagem quando todos os campos são validados
                         ScaffoldMessenger.of(context).showSnackBar(const SnackBar
                           (content: Text('Nova tarefa criada'),));
