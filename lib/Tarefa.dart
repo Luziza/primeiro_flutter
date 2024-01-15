@@ -19,6 +19,12 @@ class _TarefaState extends State<Tarefa> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        actions: [
+          IconButton(onPressed: () {
+            setState(() {
+            });
+          }, icon: Icon (Icons.refresh, color: Colors.green,))
+        ],
         title: Text('Flutter: Primeiros passos'),
       ),
       body: Padding(
@@ -141,6 +147,10 @@ class _TaskState extends State<Task> {
       return false;
     }
     return true;
+  };
+
+  Future dialogo(BuildContext context){
+      return showDialog(context: context, builder: builder)
   }
 
   @override
@@ -251,6 +261,8 @@ class _TaskState extends State<Task> {
                             child: Icon(Icons.arrow_drop_up)),
                       ],
                     ),
+
+
 
 
                   ],
