@@ -47,7 +47,7 @@ class TaskDao {
 
   //--------------------------------------------------FINDALL---------------------------------------------------------------------------------//
   ///Metódo que procura todas as tarefas, retorna lista de tarefas e como demora
-  ///um pouco ela é tio future que retorna uma lista de tasks
+  ///um pouco ela é tipo future que retorna uma lista de tasks
   Future<List<Task>> findAll() async {
     final Database banco = await getDataBase();
 

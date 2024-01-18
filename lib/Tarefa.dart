@@ -97,17 +97,6 @@ class _TarefaState extends State<Tarefa> {
       Column(mainAxisAlignment: MainAxisAlignment.end, children: [
         FloatingActionButton(
           onPressed: () {
-            setState(() {
-              opacidade = !opacidade;
-            });
-          },
-
-          ///! quer dizer o contrário
-          backgroundColor: Colors.white,
-          child: Icon(Icons.remove_red_eye, color: Colors.green),
-        ),
-        FloatingActionButton(
-          onPressed: () {
             Navigator.push(
                 context,
                 MaterialPageRoute(
@@ -157,18 +146,19 @@ class _TaskState extends State<Task> {
   }
 
 
+    ///função de criar a caixa de confirmação para exclusão da task
   Future dialogo(BuildContext context) {
     return showDialog(context: context,
         builder: (context) =>
             AlertDialog(content: Text('Tem certeza que deseja excluir?'),
                 actions: [
                 TextButton(onPressed: () {
-                  Navigator.of(context).pop(false);
+                  Navigator.of(context).pop(true);
                 }, child: Text('Sim')),
                 TextButton(onPressed: () {
-                  Navigator.of(context).pop(true);
+                  Navigator.of(context).pop(false);
                 }, child: Text('Não'))],
-    );
+    ));
   }
 
   @override
@@ -263,7 +253,6 @@ class _TaskState extends State<Task> {
                         ),
 
                         Column(
-
                           children: [
                             ElevatedButton(onPressed: () {
                               setState(() {
