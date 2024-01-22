@@ -125,11 +125,14 @@ class Task extends StatefulWidget {
   final String nome;
   final String foto;
   final int dificuldade;
+  int nivel = 0;
 
-  Task(this.nome, this.foto, this.dificuldade, {super.key});
 
-  int nivel =
-  0; //é antes do @override por que se for depois toda vez que a função ocorrer ele reinicia a função e zera o nível
+  Task(this.nome, this.foto, this.dificuldade, this.nivel, {super.key});
+
+
+
+  //é antes do @override por que se for depois toda vez que a função ocorrer ele reinicia a função e zera o nível
   //o nível está na classe Task pois se estivesse na classe _TaskState quando rolasse a tela e uma tarefa saisse da tela ela reinicia e o nivel
   //volta a ser zero
   @override
@@ -266,8 +269,7 @@ class _TaskState extends State<Task> {
                             ElevatedButton(
                                 onPressed: () {
                                   setState(() {
-                                    widget
-                                        .nivel++; //usa o nivel com o widget. por que ele esta na classe task e nao na _taskstate
+                                    widget.nivel++; //usa o nivel com o widget. por que ele esta na classe task e nao na _taskstate
                                   });
                                   print(widget.nivel);
                                 },

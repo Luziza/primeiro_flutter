@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:primeiro/Tarefa.dart';
-import 'package:primeiro/data.dart';
 import 'package:primeiro/task_dao.dart';
 
 

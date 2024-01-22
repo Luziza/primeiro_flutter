@@ -6,15 +6,20 @@ class TaskDao {
   static const String tabelasql = 'CREATE TABLE $_tablename('
       '$_nome TEXT,'
       '$_dificuldade INTEGER,'
-      '$_imagem TEXT)';
+      '$_imagem TEXT,'
+      '$_nivel INTEGER';
 
   /// _ quer dizer que é privado
   static const String _tablename = 'taskTable';
   static const String _nome = 'nome';
   static const String _dificuldade = 'dificuldade';
   static const String _imagem = 'imagem';
+  static const String _nivel = 'nivel';
+
 
   //----------------------------------------------------SAVE---------------------------------------------//
+
+
 
   ///Salvar a tarefa
   save(Task tarefa) async {
@@ -41,9 +46,11 @@ class TaskDao {
     final Map<String, dynamic> mapaTarefas = Map(); ///Criou um mapa vazio
     mapaTarefas[_nome] = tarefa.nome;
     mapaTarefas[_dificuldade] = tarefa.dificuldade;
-    mapaTarefas[_imagem] = tarefa.foto; ///adiciona esses 3 valores no mapa de tarefas
+    mapaTarefas[_imagem] = tarefa.foto;
+    mapaTarefas[_nivel] = tarefa.nivel;///adiciona esses 3 valores no mapa de tarefas
     return mapaTarefas;
   }
+
 
   //--------------------------------------------------FINDALL---------------------------------------------------------------------------------//
   ///Metódo que procura todas as tarefas, retorna lista de tarefas e como demora
@@ -69,7 +76,7 @@ class TaskDao {
     for (Map<String, dynamic> linha in listaTarefas) {
       ///
       final Task tarefa = Task(
-          linha[_nome], linha[_imagem], linha[_dificuldade]);
+          linha[_nome], linha[_imagem], linha[_dificuldade], linha[_nivel]);
       tarefas.add(tarefa);
     }
     print('Lista de tarefas $tarefas');
@@ -105,3 +112,6 @@ class TaskDao {
     ///o nomeTarefa é o mesmo nome dado ao métodos delete, e se é igual ele apaga
   }
 }
+
+//-------------------------------------------UPDATE----------------------------------------------------------//
+

@@ -1,4 +1,4 @@
-#Sun Jan 14 16:51:03 BRT 2024
-base.0=C\:\\Users\\ribei\\AndroidStudioProjects\\primeiro_flutter\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Thu Jan 18 13:26:12 BRT 2024
+base.0=C\:\\Users\\luiza\\AndroidStudioProjects\\primeiro_flutter\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
